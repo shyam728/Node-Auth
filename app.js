@@ -49,7 +49,7 @@ app.use(expressSession({
     },
     //for mongostore
     store:MongoStore.create({
-        mongoUrl:process.env.MONGO_URL||"mongodb+srv://ajayagrawal:12345@cluster0.kh5yygj.mongodb.net/?retryWrites=true&w=majority",
+        mongoUrl:process.env.MONGOOSELINK,
         autoRemove:'disabled'
     },
     function(err){
