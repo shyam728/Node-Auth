@@ -4,11 +4,11 @@
   "description": "\"Authicate project Coding Ninjas skill test",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon \"app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shyam728/Node-Auth.git"
+    "type": "git"
+    
   },
   "author": "Ajay Agrawal",
   "license": "ISC",
