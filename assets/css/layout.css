@@ -1,0 +1,29 @@
+body{
+    background-color: #eee;
+  }
+  
+  
+  
+  .password-container {
+      position: relative;
+      display: inline-block;
+    }
+    
+    #password-input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #666;
+    }
+    
+    #hide-password-icon {
+      display: none;
+    }

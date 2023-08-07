@@ -1,0 +1,86 @@
+<section class="vh-100" style="background-color: #9A616D; padding-bottom: 60%; ">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-5 d-none d-md-block">
+                <img src="/images/img.jpg" 
+                  alt="login form" class="img-fluid h-100" style="border-radius: 1rem 0 0 1rem;" />
+              </div>
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+  
+                  <form action="/users/sign-in-user" method="POST">
+  
+                   
+  
+                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">SIGN IN</p>
+  
+                      
+                    <!-- social link  -->
+                    <div class="text-center mb-3">
+                        <p>Sign in with:</p>
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fab fa-facebook-f"></i>
+                        </button>
+                
+                        <a href="/users/auth/google"> <button type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fab fa-google"></i>
+                        </button></a>
+                       
+                
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fab fa-twitter"></i>
+                        </button>
+                
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fab fa-github"></i>
+                        </button>
+                      </div>
+                
+                      <p class="text-center">or:</p>
+
+
+
+
+
+                    <div class="input-group mb-4">
+                        <input type="text" class="form-control form-control-lg" name="email" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                      </div>
+                      
+                      <div class="form-outline flex-fill w-100   password-container">
+
+                        <input type="password" id="password-input" name="password" placeholder="Password" class="form-control" />
+                        <span class="icon"><i id="show-password-icon" class="fas fa-eye"></i></span>
+                        <span class="icon"><i id="hide-password-icon" class="fas fa-eye-slash"></i></span>
+
+
+            
+                      </div>
+
+                   
+  
+                   
+  
+                    <div class="pt-3 mb-4">
+                     
+                      <button class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
+                    </div>
+  
+                    <a class="small text-muted" href="#!">Forgot password?</a>
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
+                        style="color: #393f81;">Register here</a></p>
+                    <a href="#!" class="small text-muted">Terms of use.</a>
+                    <a href="#!" class="small text-muted">Privacy policy</a>
+                  </form>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

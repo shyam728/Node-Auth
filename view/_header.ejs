@@ -1,0 +1,46 @@
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="/">
+              Nodejs Authentication
+            </a>
+            
+            <!-- Left links -->
+          </div>
+      
+      
+        
+      
+          <!-- Right elements -->
+          <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <%if(locals.user){%>
+              <a class="btn btn-danger" href="/users/reset-password-page">RESET PASSWORD</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="btn btn-danger ml-4" href="/users/sign-out">SIGN OUT</a>
+              <%}else{%>
+                <a class="btn btn-danger" href="/users/sign-in">SIGN IN</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn btn-danger ml-4" href="users/sign-up">SIGN UP</a>
+                <%}%>
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->

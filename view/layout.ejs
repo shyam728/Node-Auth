@@ -1,0 +1,61 @@
+<html>
+   <head>
+            <title>
+                <%= title %>
+            </title>
+            <!-- noty link  -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" integrity="sha512-0p3K0H3S6Q4bEWZ/WmC94Tgit2ular2/n0ESdfEX8l172YyQj8re1Wu9s/HT9T/T2osUw5Gx/6pAZNk3UKbESw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js" integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+            <link rel="stylesheet" href="/css/layout.css">
+            <%- style %>
+   </head>
+   <body>
+    <%- include('_header'); %>
+
+   
+
+ 
+    <%-body%>
+
+<%- include('_footer'); %>
+   <%- script %>
+
+
+   <script>
+    <% if(flash.success && flash.success.length > 0){ %>
+       new Noty({
+            theme:'metroui',
+          text: '<h3><%= flash.success  %><h3>',
+          type:'success',
+          layout:'topRight',
+          timeout:1500
+        }).show();
+
+ <%  } %>
+    <% if(flash.error && flash.error.length > 0){ %>
+       new Noty({
+            theme:'metroui',
+          text: '<h3><%= flash.error  %><h3>',
+          type:'error',
+          layout:'topRight',
+          timeout:1500
+        }).show();
+
+ <%  } %>
+</script>
+
+    
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+   <script src="/js/layout.js"></script>
+   </body>
+</html>
