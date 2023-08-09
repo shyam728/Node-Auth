@@ -9,7 +9,7 @@ dotenv.config()
 passport.use(new googleStrategy({
         clientID: process.env.GOOGLE_CLIENT_ID, // e.g. asdfghjkkadhajsghjk.apps.googleusercontent.com
         clientSecret: process.env.GOOGLE_CLIENT_SECRET, // e.g. _ASDFA%KFJWIASDFASD#FAD-
-        callbackURL: "http://localhost:3000/users/auth/google/callback",
+        callbackURL: "https://node-auth-9wh0.onrender.com/users/auth/google/callback",
     },
 
   async  function(accessToken, refreshToken, profile, done){
