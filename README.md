@@ -1,4 +1,4 @@
-ongoDB for the backend, and HTML, CSS, and JavaScript for the frontend.
+
 
 ## Live Project Link
 You can access the live project here: [Node Authentication Project](https://node-auth-9wh0.onrender.com/)
