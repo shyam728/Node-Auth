@@ -33,10 +33,9 @@ Responsive Design: The application is designed to be responsive and accessible a
 ## Contributions
 Contributions and feedback are welcome! If you have suggestions or want to report any issues, please feel free to [create an issue](https://github.com/your-repo-url/issues) or submit a pull request.
 
-## License
-This project is licensed under the MIT License; see the [LICENSE.md] file for details.
+
 
 ## Contact
-If you have any questions or need further assistance, you can contact me at [your-email@example.com] (mailto:ajayagrawal728@gmail.com).
+If you have any questions or need further assistance, you can contact me at  (mailto:ajayagrawal728@gmail.com).
 
 Thank you for using the Node Authentication Project!
